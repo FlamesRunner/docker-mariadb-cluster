@@ -40,7 +40,7 @@ wsrep-on=ON
 wsrep-cluster-name = "$CLUSTER_NAME" 
 wsrep-cluster-address = $CLUSTER_ADDRESS
 wsrep-provider = /usr/lib/galera/libgalera_smm.so 
-wsrep-provider-options = "gcache.size=256M;gcache.page_size=128M;debug=no" 
+wsrep-provider-options = "gcache.size=512M;gcache.page_size=256M;debug=no" 
 wsrep-sst-auth = "$GALERA_USER:$GALERA_PASS" 
 wsrep_sst_method = rsync
 binlog-format = row 
@@ -48,4 +48,6 @@ default-storage-engine = InnoDB
 innodb-doublewrite = 1 
 innodb-autoinc-lock-mode = 2 
 innodb-flush-log-at-trx-commit = 2 
+innodb_buffer_pool_chunk_size = 536870912
+
 EOF
