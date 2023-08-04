@@ -48,6 +48,6 @@ default-storage-engine = InnoDB
 innodb-doublewrite = 1 
 innodb-autoinc-lock-mode = 2 
 innodb-flush-log-at-trx-commit = 2 
-innodb_buffer_pool_chunk_size = 536870912
+innodb_buffer_pool_chunk_size = 536870912 
 
 EOF
